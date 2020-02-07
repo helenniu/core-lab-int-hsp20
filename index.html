@@ -1,65 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example 8</title>
+    <title>homepage</title>
     <meta charset="utf-8">
-    <style>
-  body {
-    margin: 40px;
-  }
-  .wrapper {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
-    grid-template-rows: [row] auto [row] auto [row] ;
-    background-color: #fff;
-    color: #444;
-  }
-
-  .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
-
-  }
-
-  .a {
-    grid-column: col / span 2;
-    grid-row: row ;
-  }
-  .b {
-    grid-column: col 3 / span 2 ;
-    grid-row: row ;
-  }
-  .c {
-    grid-column: col ;
-    grid-row: row 2 ;
-  }
-  .d {
-    grid-column: col 2 / span 3 ;
-    grid-row: row 2 ;
-  }
-
-  .e {
-    grid-column: col / span 4;
-    grid-row: row 3;
-  }
-
-
-
-   </style>
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
 
  <body>
 
-   <div class="wrapper">
-    <div class="box a">A</div>
-    <div class="box b">B</div>
-    <div class="box c">C</div>
-    <div class="box d">D</div>
-    <div class="box e">E</div>
+<h1> Helen Niu</h1>
+<h4> Lab Interaction</h4>
+
+   <div class="projects">
+   	<h1 class="proj">Projects</h1>
+    <div class="box a">project 1</div>
+    <div class="box b">project 2</div>
+    <div class="box c">project 3</div>
+  </div>
+
+  <div class="exercises">
+  	<h1 class="ex">Exercises</h1>
+    <div class="box two">
+    	<a href="sessions/week2/index.html"> week 2</a>
+    </div>
+
+    <div class="box three">week 3</div>
+    <div class="box four">week 4</div>
+    <div class="box five">week 5</div>
+    <div class="box six">week 6</div>
+    <div class="box seven">week 7</div>
+    <div class="box eight">week 8</div>
+    <div class="box nine">week 9</div>
+    <div class="box ten">week 10</div>
+  	
+
   </div>
 </body>
 </html>
