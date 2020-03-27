@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>personal info</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/qualificationstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Libre+Baskerville:400,400i,700|Work+Sans:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Work+Sans:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500|Work+Sans:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!--- constants --->
+	<div class="infobar">
+		<a href="info.html">
+			<h2>General Information and How to Send</h2>
+		</a>
+	</div>
+
+	<div class="logo">
+		<a href="index.html">
+			<h1>New York State Voter Registration Form</h1>
+		</a>
+	</div>
+
+	<div class="linedecor">
+		
+	</div>
+	<!--- constants --->
+
+	<!--- navigation --->
+	<div class="rt1finish">
+		<a href="qualification.html">
+			<h2>Qualification</h2>
+		</a>
+		
+	</div>
+	<div class="rt2active">
+		<a href="personalinfo.html">
+			<h2>Personal Information</h2>
+		</a>
+		
+	</div>
+	<div class="rt3">
+		<a href="votinginfo.html">
+			<h2>Voting Information</h2>
+		</a>
+		
+	</div>
+	<div class="rt4">
+		<a href="organ.html">
+			<h2>(Optional)Organ Donation</h2>
+		</a>
+		
+	</div>
+	<div class="right">
+		
+	</div>
+
+	<!--- questions --->
+<div class="head">
+	<h1>Personal Information</h1>
+</div>
+
+<div class="q" id="q1">
+		<label for="first_name">First name <span class="star">*</span> </label>
+		<input required="" aria-required="true" class="required" type="text" name="FirstName" id="first_name">
+		<br>
+		<br>
+		<label for="middle_initial">Middle Initial </label>
+		<input type="text" name="MI" id="middle_initial" size="5">
+		<br>
+		<br>
+		<label for="last_name">Last name <span class="star">*</span> </label>
+		<input required="" aria-required="true" class="required" type="text" name="LastName" id="last_name">
+		<br>
+		<br>
+		<label for="suffix">Suffix </label>
+		<input type="text" name="Suffix" id="suffix" size="5">
+		
+	</div>
+	<div class="sec1" id="a">
+		<h3>3) Your Name </h3>
+	</div>
+
+	<div class="q" id="q2">
+		<label for="birth_month">Birth Month <span class="star">*</span>  </label>
+		<input required="" aria-required="true" aria-describedby="birth_month_desc" class="required" type="number" min="1" max="12" step="1" name="BirthMonth" id="birth_month" minlength="2" maxlength="2">
+		<span id="birth_month_desc" class="desc">Two digit number representing the month you were born.</span>
+		<br>
+		<br>
+		<label for="birth_day">Birth Day <span class="star">*</span>  </label>
+		<input required="" aria-required="true" aria-describedby="birth_day_desc" class="required" type="number" min="1" max="31" step="1" name="BirthDay" id="birth_day" minlength="2" maxlength="2">
+		<span id="birth_day_desc" class="desc">Two digit number representing the day you were born.</span>
+		<br>
+		<br>
+		<label for="birth_year">Birth Year <span class="star">*</span>  </label>
+		<input required="" aria-required="true" aria-describedby="birth_year_desc" class="required" type="number" min="1900" max="2016" step="1" name="BirthYear" id="birth_year" minlength="4" maxlength="4">
+		<span id="birth_year_desc" class="desc">Four digit number representing the year you were born.</span>
+		
+		
+	</div>
+	<div class="sec1" id="b">
+		<h3>4) Date of Birth </h3>
+	</div>
+
+	<div class="q" id="q4">
+		<label for="area_code">Area Code  </label>
+		<input aria-required="false" aria-describedby="area_code_desc" type="number" min="100" max="999" step="1" name="TeleAreaCode" id="area_code" maxlength="3" minlength="3">
+		<span id="area_code_desc" class="desc">Three digits only.</span>
+		<br>
+		<br>
+		<label for="TelePrefix_1">Prefix</label>
+		<input aria-required="false" aria-describedby="prefix_desc" type="number" min="100" max="999" step="1" name="TelePrefix_1" id="TelePrefix_1" maxlength="3" minlength="3">
+		<span id="prefix_desc" class="desc">Three digits only.</span>
+		<br>
+		<br>
+		<label for="Telephone_1">Line Number</label>
+		<input aria-required="false" aria-describedby="line_number_desc" type="number" min="0000" max="9999" step="1" name="Telephone_1" id="Telephone_1" maxlength="4" minlength="4">
+		<span id="line_number_desc" class="desc">Four digits only.</span>
+		
+		
+	</div>
+	<div class="sec1" id="d">
+		<h3>5) Telephone </h3>
+	</div>
+
+<div class="q" id="q5">
+		<label for="email">Email Address </label>
+		<input aria-required="false" type="email" name="Email" id="email">
+
+	</div>
+	<div class="sec1" id="e">
+		<h3>6) Email </h3>
+	</div>
+
+	<div class="q" id="q6">
+		<label for="Physical_Address">Address <span class="star">*</span> </label>
+		<input required="" aria-required="true" aria-describedby="p_address_desc" class="required" type="text" name="RAddress" id="Physical_Address">
+		<span id="p_address_desc" class="desc">Cannot be a PO Box.</span>
+		<br>
+		<br>
+		<label for="Physical_Address_Apartment_Number">Apartment Number </label>
+		<input type="text" name="Apt#" id="Physical_Address_Apartment_Number">
+		<br>
+		<br>
+		<label for="Physical_Address_City_Town_Village">City/Town/Village <span class="star">*</span> </label>
+		<input required="" aria-required="true" class="required" type="text" name="RCity/Town/Village" id="Physical_Address_City_Town_Village">
+		<br>
+		<br>
+		<label for="Physical_Address_Zip">Zip Code <span class="star">*</span> </label>
+		<input required="" aria-required="true" aria-describedby="p_address_zip_desc" class="required" type="number" minlength="5" maxlength="5" name="ResZip" id="Physical_Address_Zip">
+		<span id="p_address_zip_desc" class="desc">Five digits only.</span>
+		<br>
+		<br>
+		<label for="County_Name">New York State County <span class="star">*</span> </label>
+		<br>
+		<select aria-required="true" class="required" id="County_Name" name="County" title="Please select a county from the list.">
+        <option selected="selected" value="">SELECT A COUNTY</option>
+        <option label="ALBANY" value="ALBANY">ALBANY</option>
+        <option label="ALLEGANY" value="ALLEGANY">ALLEGANY</option>
+        <option label="BROOME" value="BROOME">BROOME</option>
+        <option label="BRONX" value="BRONX">BRONX</option>
+        <option label="CATTARAUGUS" value="CATTARAUGUS">CATTARAUGUS</option>
+        <option label="CAYUGA" value="CAYUGA">CAYUGA</option>
+        <option label="CHAUTAUQUA" value="CHAUTAUQUA">CHAUTAUQUA</option>
+        <option label="CHEMUNG" value="CHEMUNG">CHEMUNG</option>
+        <option label="CHENANGO" value="CHENANGO">CHENANGO</option>
+        <option label="CLINTON" value="CLINTON">CLINTON</option>
+        <option label="COLUMBIA" value="COLUMBIA">COLUMBIA</option>
+        <option label="CORTLAND" value="CORTLAND">CORTLAND</option>
+        <option label="DELAWARE" value="DELAWARE">DELAWARE</option>
+        <option label="DUTCHESS" value="DUTCHESS">DUTCHESS</option>
+        <option label="ERIE" value="ERIE">ERIE</option>
+        <option label="ESSEX" value="ESSEX">ESSEX</option>
+        <option label="FRANKLIN" value="FRANKLIN">FRANKLIN</option>
+        <option label="FULTON" value="FULTON">FULTON</option>
+        <option label="GENESEE" value="GENESEE">GENESEE</option>
+        <option label="GREENE" value="GREENE">GREENE</option>
+        <option label="HAMILTON" value="HAMILTON">HAMILTON</option>
+        <option label="HERKIMER" value="HERKIMER">HERKIMER</option>
+        <option label="JEFFERSON" value="JEFFERSON">JEFFERSON</option>
+        <option label="KINGS" value="KINGS">KINGS</option>
+        <option label="LEWIS" value="LEWIS">LEWIS</option>
+        <option label="LIVINGSTON" value="LIVINGSTON">LIVINGSTON</option>
+        <option label="MADISON" value="MADISON">MADISON</option>
+        <option label="MONROE" value="MONROE">MONROE</option>
+        <option label="MONTGOMERY" value="MONTGOMERY">MONTGOMERY</option>
+        <option label="NASSAU" value="NASSAU">NASSAU</option>
+        <option label="NEW YORK" value="NEW YORK">NEW YORK</option>
+        <option label="NIAGARA" value="NIAGARA">NIAGARA</option>
+        <option label="ONEIDA" value="ONEIDA">ONEIDA</option>
+        <option label="ONONDAGA" value="ONONDAGA">ONONDAGA</option>
+        <option label="ONTARIO" value="ONTARIO">ONTARIO</option>
+        <option label="ORANGE" value="ORANGE">ORANGE</option>
+        <option label="ORLEANS" value="ORLEANS">ORLEANS</option>
+        <option label="OSWEGO" value="OSWEGO">OSWEGO</option>
+        <option label="OTSEGO" value="OTSEGO">OTSEGO</option>
+        <option label="PUTNAM" value="PUTNAM">PUTNAM</option>
+        <option label="QUEENS" value="QUEENS">QUEENS</option>
+        <option label="RENSSELAER" value="RENSSELAER">RENSSELAER</option>
+        <option label="RICHMOND" value="RICHMOND">RICHMOND</option>
+        <option label="ROCKLAND" value="ROCKLAND">ROCKLAND</option>
+        <option label="SARATOGA" value="SARATOGA">SARATOGA</option>
+        <option label="SCHENECTADY" value="SCHENECTADY">SCHENECTADY</option>
+        <option label="SCHOHARIE" value="SCHOHARIE">SCHOHARIE</option>
+        <option label="SCHUYLER" value="SCHUYLER">SCHUYLER</option>
+        <option label="SENECA" value="SENECA">SENECA</option>
+        <option label="ST. LAWRENCE" value="ST. LAWRENCE">ST. LAWRENCE</option>
+        <option label="STEUBEN" value="STEUBEN">STEUBEN</option>
+        <option label="SUFFOLK" value="SUFFOLK">SUFFOLK</option>
+        <option label="SULLIVAN" value="SULLIVAN">SULLIVAN</option>
+        <option label="TIOGA" value="TIOGA">TIOGA</option>
+        <option label="TOMPKINS" value="TOMPKINS">TOMPKINS</option>
+        <option label="ULSTER" value="ULSTER">ULSTER</option>
+        <option label="WARREN" value="WARREN">WARREN</option>
+        <option label="WASHINGTON" value="WASHINGTON">WASHINGTON</option>
+        <option label="WAYNE" value="WAYNE">WAYNE</option>
+        <option label="WESTCHESTER" value="WESTCHESTER">WESTCHESTER</option>
+        <option label="WYOMING" value="WYOMING">WYOMING</option>
+        <option label="YATES" value="YATES">YATES</option>
+    </select>
+
+	</div>
+	<div class="sec1" id="f">
+		<h3>7) The address where you live </h3>
+	</div>
+
+<div class="q" id="q7">
+
+	<p>(Skip if same as the address where you live as stated above.) </p>
+
+	<label for="Mailing_Address">Address or P.O. Box </label>
+	<input aria-required="false" type="text" name="MAddress" id="Mailing_Address">
+	<br>
+	<br>
+	<label for="Mailing_Address_Apartment_Number">Apartment Number </label>
+	<input aria-required="false" type="text" name="POBox" id="Mailing_Address_Apartment_Number">
+	<br>
+	<br>
+	<label for="Mailing_Address_City_Town_Village">City/Town/Village </label>
+	<input aria-required="false" type="text" name="MCity/Town/Village" id="Mailing_Address_City_Town_Village">
+	<br>
+	<br>
+	<label for="Mailing_Address_Zip">Zip Code </label>
+	<input aria-required="false" aria-describedby="m_address_zip_desc" type="number" minlength="5" maxlength="5" name="MailZip" id="Mailing_Address_Zip">
+	<span id="m_address_zip_desc" class="desc">Five digits only.</span>
+		
+		
+	</div>
+	<div class="sec1" id="g">
+		<h3>8) The address where you receive mail</h3>
+		
+	</div>
+
+	<div class="startbtn" id="persbtn">
+	<a href="votinginfo.html">
+		<h1>Next</h1>
+	</a>
+	
+
+</div>
+
+	
+
+</body>
+</html>

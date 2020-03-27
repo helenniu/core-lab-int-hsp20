@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>organ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/qualificationstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Libre+Baskerville:400,400i,700|Work+Sans:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Work+Sans:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500|Work+Sans:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!--- constants --->
+	<div class="infobar">
+		<a href="info.html">
+			<h2>General Information and How to Send</h2>
+		</a>
+	</div>
+
+	<div class="logo">
+		<a href="index.html">
+			<h1>New York State Voter Registration Form</h1>
+		</a>
+	</div>
+
+	<div class="linedecor">
+		
+	</div>
+	<!--- constants --->
+
+	<!--- navigation --->
+	<div class="rt1finish">
+		<a href="qualification.html">
+			<h2>Qualification</h2>
+		</a>
+		
+	</div>
+	<div class="rt2finish">
+		<a href="personalinfo.html">
+			<h2>Personal Information</h2>
+		</a>
+		
+	</div>
+	<div class="rt3finish">
+		<a href="votinginfo.html">
+			<h2>Voting Information</h2>
+		</a>
+		
+	</div>
+	<div class="rt4active">
+		<a href="organ.html">
+			<h2>(Optional)Organ Donation</h2>
+		</a>
+		
+	</div>
+	<div class="right">
+		
+	</div>
+	<!--- navigation --->
+
+	<!--- questions--->
+	<div class="head" id="organhead">
+	<h1>(Optional) Register to donate your organs and tissues</h1>
+	</div>
+
+	<div class="organinfo">
+		
+		<p>If you would like to be an organ and tissue donor upon your death, you may enroll in the NYS Donate Life™ Registry online at <a href="https://donatelife.ny.gov/">www.donatelife.ny.gov</a> or provide your name and address below. You will receive a confirmation email or letter, which will also provide you an opportunity to limit your donation.</p>
+	</div>
+
+<div class="q" id="q13">	
+	<label for="first_name">First name  </label>
+		<input required="" aria-required="true" class="required" type="text" name="FirstName" id="first_name">
+		<br>
+		<br>
+		<label for="middle_initial">Middle Initial </label>
+		<input type="text" name="MI" id="middle_initial" size="5">
+		<br>
+		<br>
+		<label for="last_name">Last name  </label>
+		<input required="" aria-required="true" class="required" type="text" name="LastName" id="last_name">
+		<br>
+		<br>
+		<label for="suffix">Suffix </label>
+		<input type="text" name="Suffix" id="suffix" size="5">
+
+	</div>
+	<div class="sec1" id="m">
+		<h3>1) Your Name</h3>
+		
+	</div>
+	
+	<div class="q" id="q14">	
+	<label for="Mailing_Address">Address </label>
+	<input aria-required="false" type="text" name="MAddress" id="Mailing_Address">
+	<br>
+	<br>
+	<label for="Mailing_Address_Apartment_Number">Apartment Number </label>
+	<input aria-required="false" type="text" name="POBox" id="Mailing_Address_Apartment_Number">
+	<br>
+	<br>
+	<label for="Mailing_Address_City_Town_Village">City</label>
+	<input aria-required="false" type="text" name="MCity/Town/Village" id="Mailing_Address_City_Town_Village">
+	<br>
+	<br>
+	<label for="Mailing_Address_Zip">Zip Code </label>
+	<input aria-required="false" aria-describedby="m_address_zip_desc" type="number" minlength="5" maxlength="5" name="MailZip" id="Mailing_Address_Zip">
+	<span id="m_address_zip_desc" class="desc">Five digits only.</span>
+
+	</div>
+	<div class="sec1" id="n">
+		<h3>2) Your address</h3>
+		
+	</div>
+
+	<div class="q" id="q15">
+		<label for="birth_month">Birth Month  </label>
+		<input required="" aria-required="true" aria-describedby="birth_month_desc" class="required" type="number" min="1" max="12" step="1" name="BirthMonth" id="birth_month" minlength="2" maxlength="2">
+		<span id="birth_month_desc" class="desc">Two digit number representing the month you were born.</span>
+		<br>
+		<br>
+		<label for="birth_day">Birth Day </label>
+		<input required="" aria-required="true" aria-describedby="birth_day_desc" class="required" type="number" min="1" max="31" step="1" name="BirthDay" id="birth_day" minlength="2" maxlength="2">
+		<span id="birth_day_desc" class="desc">Two digit number representing the day you were born.</span>
+		<br>
+		<br>
+		<label for="birth_year">Birth Year  </label>
+		<input required="" aria-required="true" aria-describedby="birth_year_desc" class="required" type="number" min="1900" max="2016" step="1" name="BirthYear" id="birth_year" minlength="4" maxlength="4">
+		<span id="birth_year_desc" class="desc">Four digit number representing the year you were born.</span>
+		
+		
+	</div>
+	<div class="sec1" id="o">
+		<h3>3) Date of Birth </h3>
+	</div>
+
+	<div class="q" id="q16">
+		<input aria-required="false" type="radio" name="OGender" id="OMale" value="Male">
+		<label for="OMale" class="inline">Male </label>
+		<br>
+		<br>
+		<input aria-required="false" type="radio" name="OGender" id="OFemale" value="Female">
+		<label for="OFemale" class="inline">Female </label>
+		
+		
+	</div>
+	<div class="sec1" id="p">
+		<h3>4) Gender </h3>
+	</div>
+
+	<div class="q" id="q17">
+		<label for="Eyecolor">Please specify your eye color </label>
+		<input aria-required="false" type="text" name="EyeColor" id="Eyecolor">
+		
+	</div>
+	<div class="sec1" id="q">
+		<h3>5) Eye Color </h3>
+	</div>
+
+	<div class="q" id="q18">
+		<p>
+Please specify your height in feet and inches below.
+</p>
+<input aria-required="false" type="number" min="0" max="8" maxlength="1" name="OHeightFeet" id="organ_donation_height_feet">
+<label for="organ_donation_height_feet" class="inline">Feet </label>
+<br>
+<br>
+<input aria-required="false" type="number" min="0" max="11" maxlength="2" name="OHeightInches" id="organ_donation_height_inches">
+<label for="organ_donation_height_inches" class="inline">Inches </label>
+		
+	</div>
+	<div class="sec1" id="r">
+		<h3>6) Height information</h3>
+	</div>
+
+<div class="q" id="q19">
+		<label for="OEmail">Email Address </label>
+		<input aria-required="false" type="email" name="OEmail" id="OEmail">
+		<br>
+		<br>
+		<label for="ODMV_ID_NYC#">DMV or ID NYC#</label>
+		<input aria-required="false" type="number" name="ODMV_ID_NYC#" id="ODMV_ID_NYC#">
+		
+	</div>
+	<div class="sec1" id="s">
+		<h3>7) Identification information</h3>
+	</div>
+
+<div class="startbtn" id="finbtn">
+	<a href="index.html">
+		<h1>Finish</h1>
+	</a>
+	
+
+</div>
+
+
+</body>
+</html>
