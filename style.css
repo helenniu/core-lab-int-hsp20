@@ -113,6 +113,13 @@ grid-column: col 2 / span 2;
     grid-row: row 13;
 
   }
+
+  .eleven {
+
+grid-column: col 2 / span 2;
+    grid-row: row 14;
+
+  }
   a{
     text-decoration: none;
     color: white;
