@@ -120,6 +120,12 @@ grid-column: col 2 / span 2;
     grid-row: row 14;
 
   }
+
+  .twelve {
+
+grid-column: col 2 / span 2;
+    grid-row: row 15;
+  }
   a{
     text-decoration: none;
     color: white;
