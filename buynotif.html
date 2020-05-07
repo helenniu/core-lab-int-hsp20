@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=375px, height=812px, initial-scale=1.0"
+    />
+    <script src="anime.min.js"></script>
+    <title>Profile</title>
+  </head>
+
+  <style type="text/css">
+    :root {
+      --red: #FF7474;
+      --blue: #AEC8F2;
+      --gray: #707070;
+    }
+
+    body,
+    html {
+      background-color: var(--red);
+      font-family: 'Avenir book';
+      color: white;
+    }
+    
+    a {
+      text-decoration:none;
+    }
+    
+    #container {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      text-align:center;
+      margin-top:7em;
+    }
+    
+    h1 {
+      font-size:22px;
+    }
+
+   
+
+    .returnbtn {
+      background-color: var(--blue);
+      width: 75px;
+      height: 75px;
+      text-align: center;
+      text-decoration:none;
+      position:relative;
+      margin: 2em auto;
+      box-shadow: 0px 3px 6px gray;
+      color: white;
+      line-height: 4.5;
+    }
+    
+    .returnbtn a{
+      text-decoration: none;
+    }
+    
+    /* card*/
+.card{
+	position:relative;
+      margin:auto;
+	
+	display: grid;
+	grid-template-columns: .2fr 1fr .2fr;
+	grid-template-rows: 1fr .1fr .8fr .2fr;
+	padding: .5em;
+	width: 299px;
+	height: 467px;
+	font-family: Avenir;
+    align-items:center;
+    justify-content:center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out 0s;
+  background-color: white;
+  z-index: 40;
+
+}
+.artbox{
+	grid-row: 1/2;
+	grid-column: 2/3;
+	
+}
+
+.price{
+	grid-row: 2/3;
+	grid-column: 3/4;
+	display: flex;
+	
+
+}
+.desc{
+	grid-row: 3/4;
+	grid-column: 2/3;
+	font-size: 15px;
+	text-align: center;
+	color: black;
+
+
+
+}
+.buyitnow{
+
+	grid-row: 4/5;
+	grid-column: 2/3;
+	width: 113px;
+	height: 28px;
+	background-color: lightgrey;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-left: 50px;
+	color: black;
+	
+
+}
+.buyitnow a{
+	text-decoration: none;
+	color: black;
+}
+
+/* card*/
+
+
+    
+    
+  </style>
+
+  <body>
+    <div id="container">
+      <h1>
+        You Purchased this Artwork!
+      </h1>
+      <div class="card">
+        <div class="artbox">
+		<img src="assets/1.png" width="100%" >
+	</div>
+	<div class="price">
+		<img src="assets/sell.png" width="50%" height="50%" > <p>80</p>
+	</div>
+	<div class="desc">
+		<p>Renaissance</p>
+		<p>Painting</p>
+		<p>4ft x 4ft</p>
+		<p>John Smith</p>
+	</div>
+	
+	
+      
+      </div>
+      <a href="gallery.html">
+        <div class="returnbtn">
+          Return
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

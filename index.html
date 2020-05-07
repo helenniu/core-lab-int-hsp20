@@ -1,53 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>homepage</title>
-    <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+	<title>QART</title>
+</head>
 
- <body>
+<style type="text/css">
+  
+	body {
+		overflow: hidden;
+		font-family: 'Avenir book';
+    
 
-<h1> Helen Niu</h1>
-<h4> Lab Interaction</h4>
 
-   <div class="projects">
-   	<h1 class="proj">Projects</h1>
-    <div class="box a">Project 1</div>
-    <div class="box b">
-      <a href="projects/project2/index.html">Project 2</a>
-    </div>
-    <div class="box c">Project 3</div>
-  </div>
+	}
+a{
+	text-decoration: none;
+}
+  
+  .animation{
+  	width: 8em;
+		height: 12em;
+    z-index: 40;
+    transition: all 0.3s ease-in-out 0s;
+    position: absolute;
+		top: 291px;
+		left: 120px;
+  }
 
-  <div class="exercises">
-  	<h1 class="ex">Sessions</h1>
-    <div class="box two">
-    	<a href="sessions/week2/index.html"> week 2</a>
-    </div>
+	.onboarding {
+		display: ;
+		justify-content: center;
+		align-items: center;
+		width: 100vh;
+	}
+
+	.circle {
+     transition: all 0.3s ease-in-out 0s;
+		border-radius: 50%;
+		background-color: #FF7474;
+		width: 8em;
+		height: 8em;
+		position: absolute;
+		top: 291px;
+		left: 120px;
+		z-index: 20;
+	}
+
+	.square {
+     transition: all 0.3s ease-in-out 0s;
+		width: 8em;
+		height: 8em;
+		background-color: #AEC8F2;
+		position: absolute;
+		top: 350px;
+		left: 120px;
+		z-index: 10;
+	}
+	#circle1 {
 	
-    <div class="box four">
-      <a href="sessions/week4/index.html"> week 4</a>
-    </div>
-    <div class="box five">
-      <a href="sessions/week5/index.html"> week 5</a>
-    </div>
-    <div class="box six">
-    	<a href="sessions/week6/index.html"> week 6</a>
-    </div>
-   
-    <div class="box ten">
-      <a href="sessions/week10/variable-fonts.html"> week 10</a>
-    </div>
-  	
-    <div class="box eleven">
-      <a href="sessions/week11/index.html"> week 11</a>
-    </div>
+		text-align: center;
+		opacity: 0;
+     transition: all 0.3s ease-in-out 0.4s;
+		border-radius: 50%;
+		color: white;
+		width: 8em;
+		height: 8em;
+		position: absolute;
+		top: 70px;
+		left: 120px;
+		z-index: 30;
+    padding-top: 25px;
+	}
 
-     <div class="box twelve">
-      <a href="sessions/week12/index.html"> week 12</a>
-    </div>
+	
 
-  </div>
+	#square1 {
+		text-align: center;
+		opacity: 0;
+     transition: all 0.3s ease-in-out 0.4s;
+		width: 8em;
+		height: 8em;
+		color: white;
+		position: absolute;
+		top: 550px;
+		left: 120px;
+		z-index: 30;
+    padding-top: 25px;
+
+	}
+
+	.title {
+		font-family: 'Avenir book';
+		position: absolute;
+		top: 325px;
+		left: 135px;
+		z-index: 0;
+	}
+
+
+</style>
+
+<body>
+	
+    
+		<!--<a href="homepage.html">-->
+		<div class="animation" id="animation" onclick="cardDown()"></div>
+		<a href="profile.html">
+      <div id="circle1">
+      	<h2>profile</h2>
+      </div>
+  </a>
+  <a href="gallery.html">
+      <div id="square1">
+      	<h2>gallery</h2>
+      </div>
+  </a>
+			<div class="circle" id="circle"></div>
+			<div class="title">
+				<h1>QART</h1>
+			</div>
+			<div class="square" id="square"></div>
+
+	
+		<!--</a>-->
+	
 </body>
+
+<script type="text/javascript">
+  
+ function cardDown() {
+ 	document.getElementById('animation').style.top= "-300px";
+
+    document.getElementById('circle').style.top= "70px";
+    document.getElementById('square').style.top= "550px";
+     document.getElementById('circle1').style.opacity= 1;
+    document.getElementById('square1').style.opacity= 1;
+}
+
+
+
+
+	
+</script>
+
 </html>

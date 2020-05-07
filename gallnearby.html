@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  
+  
+<style type="text/css">
+	html{
+   font-family: 'Avenir book';
+	}
+  .gallery-cotainer1{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-auto-rows: min-content;
+
+}
+.title{
+	grid-column: 1/3;
+	grid-row: 1;
+	
+	text-align: center;
+	height: 25px;
+
+	font-size: 10px;
+
+}
+  
+  .title h2{
+	margin: auto;
+}
+.leftcolumn{
+	grid-column: 1;
+	grid-row: 1;
+	margin: 30px;
+}
+
+.rightcolumn{
+	grid-column: 2;
+	grid-row: 1;
+	margin: 30px;
+}
+
+.sell1{
+	grid-column: 1;
+	grid-row:1;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.sell2{
+	grid-column: 2;
+	grid-row:1;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+/* card*/
+#artcard{
+	position: absolute;
+	left: 30px;
+	top: -500px;
+	
+	display: grid;
+	grid-template-columns: .2fr 1fr .2fr;
+	grid-template-rows: 1fr .1fr .8fr .2fr;
+	padding: .5em;
+	width: 299px;
+	height: 467px;
+	font-family: Avenir;
+    align-items:center;
+    justify-content:center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out 0s;
+  background-color: white;
+  z-index: 40;
+
+}
+.artbox{
+	grid-row: 1/2;
+	grid-column: 2/3;
+	
+}
+
+.price{
+	grid-row: 2/3;
+	grid-column: 3/4;
+	display: flex;
+	
+
+}
+.desc{
+	grid-row: 3/4;
+	grid-column: 2/3;
+	font-size: 15px;
+	text-align: center;
+	
+
+
+
+}
+.buyitnow{
+
+	grid-row: 4/5;
+	grid-column: 2/3;
+	width: 113px;
+	height: 28px;
+	background-color: lightgrey;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-left: 50px;
+	color: black;
+	
+
+}
+.buyitnow a{
+	text-decoration: none;
+	color: black;
+}
+
+/* card*/
+
+.clickcard{
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 30;
+	width: 153px;
+	height: 153px;
+	position: absolute;
+
+
+}
+  
+  #profnav {
+      overflow: hidden;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display:inline;
+    }
+
+    .circlebtn {
+      border-radius: 50%;
+      margin: 1.5em 1em 0.8em 0.8em;
+      width: 50px;
+      height: 50px;
+      background-color: #FF7474;
+      float: right;
+       box-shadow: 0px 3px 6px lightgray;
+    }
+
+    .squarebtn {
+      background-color: #AEC8F2;
+      margin: 1.5em;
+      width: 47px;
+      height: 47px;
+      float: left;
+     
+      display: flex; 
+      justify-content: center;
+      text-align:center;
+    }
+
+    #recent{
+    	margin-top: 8px;
+
+    }
+
+    #nearby{
+    	margin-top: 8px;
+    }
+
+    #sell{
+    	margin-top: 6px;
+    }
+
+   
+</style>
+
+
+
+
+
+<body>
+
+
+
+	<div class="clickcard" id="clickcard" onclick="cardUp()"></div>
+
+	<!--card-->
+<div id="artcard">
+	
+	<div class="artbox">
+		<img src="assets/1.png" width="100%" >
+	</div>
+	<div class="price">
+		<img src="assets/sell.png" width="50%" height="50%" > <p>80</p>
+	</div>
+	<div class="desc">
+		<p>Renaissance</p>
+		<p>Painting</p>
+		<p>4ft x 4ft</p>
+		<p>John Smith</p>
+	</div>
+	
+	<div class="buyitnow">
+		<a href="buying.html">
+		<p>buy it now</p>
+		</a>
+	</div>
+	
+</div>
+
+<!--card-->
+  
+  <div id="profnav">
+
+      
+<a href="profile.html">
+        <div id="returnprofile" class="circlebtn"></div>
+	</a>
+
+
+<a href="gallery.html">
+ 	<div class="squarebtn">
+        <div id="recent" >
+         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="31.395" viewBox="0 0 33 31.395">
+ 		<defs>
+    	<style>
+      	.cls-1 {
+        fill: #fff;
+     	 }
+    	</style>
+ 		</defs>
+ 	 	<path id="Icon_material-new-releases" data-name="Icon material-new-releases" class="cls-1" d="M34.5,18l-3.66-4.17.51-5.52L25.935,7.08,23.1,2.31,18,4.5,12.9,2.31,10.065,7.08,4.65,8.3l.51,5.52L1.5,18l3.66,4.17L4.65,27.7l5.415,1.23L12.9,33.7,18,31.5l5.1,2.19,2.835-4.77,5.415-1.23-.51-5.52Zm-15,7.5h-3v-3h3Zm0-6h-3v-9h3Z" transform="translate(-1.5 -2.31)"/>
+		</svg>
+   		</div>
+   		</div>
+  	</a>
+     
+
+
+
+
+      
+
+       <a href="gallnearby.html">
+<div class="squarebtn">
+        <div id="nearby" >
+          <svg xmlns="http://www.w3.org/2000/svg" margin-top="10px" width="31.823" height="33.056" viewBox="0 0 31.823 33.056">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Icon_map-location-arrow" data-name="Icon map-location-arrow" class="cls-1" d="M23.412,34.637,18.32,19.44H1.773L33.6,1.581Z" transform="translate(-1.773 -1.581)"/>
+</svg>
+        </div>
+        </div>
+      </a>
+
+<a href="gallsell.html">
+	<div class="squarebtn">
+        <div id="sell" >
+          <svg xmlns="http://www.w3.org/2000/svg"   width="35px" height="35px" viewBox="0 0 10.711 18.93">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Icon_metro-money" data-name="Icon metro-money" class="cls-1" d="M16.456,14.735c-2.387-.62-3.155-1.257-3.155-2.256,0-1.146,1.057-1.951,2.839-1.951,1.872,0,2.566.894,2.629,2.208h2.324A4.187,4.187,0,0,0,17.718,8.73v-2.3H14.563V8.7c-2.04.447-3.681,1.762-3.681,3.8,0,2.429,2.014,3.639,4.943,4.343,2.634.631,3.155,1.551,3.155,2.54,0,.72-.51,1.877-2.839,1.877-2.166,0-3.024-.973-3.134-2.208H10.688c.131,2.3,1.851,3.591,3.875,4.028v2.282h3.155V23.1c2.045-.394,3.681-1.577,3.681-3.739,0-2.976-2.556-4-4.943-4.622Z" transform="translate(-10.688 -6.427)"/>
+</svg>
+        </div>
+        </div>
+      </a>
+     
+
+
+
+      
+</div>
+
+
+	<div class="gallery-cotainer1" onclick="cardDown()">
+
+	
+		<div class="title">
+			<h2>Nearby</h2>
+		</div>
+
+		<!--gallery photos-->
+		<div class="leftcolumn">
+			<img src="assets/1.png" width="100%"  >
+			<img src="assets/10.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/2.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/3.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/9.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/5.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/7.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/8.png" width="100%" style="margin-top: 30px;">
+		</div>
+
+		<div class="rightcolumn">
+			<img src="assets/6.png" width="100%">
+			<img src="assets/7.png" width="100%" style="margin-top: 30px;">
+			
+			<img src="assets/8.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/4.png" width="100%" style="margin-top: 30px;">
+				<img src="assets/10.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/2.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/3.png" width="100%" style="margin-top: 30px;">
+			<img src="assets/10.png" width="100%" style="margin-top: 30px;">
+		</div>
+
+		<!--selling stick-->
+		<img class="sell1" src="assets/sell.png">
+		<img class="sell2" src="assets/sell.png">
+
+
+	</div>
+
+
+
+
+	<!--artwork info-->
+	<div></div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+	function cardUp() {
+ 	document.getElementById('artcard').style.top = "100px";
+ }
+
+ function cardDown() {
+ 	document.getElementById('artcard').style.top = "-500px";
+ }
+	
+
+</script>
+
+</html>
