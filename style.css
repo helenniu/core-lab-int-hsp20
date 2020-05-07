@@ -1,7 +1,7 @@
 .projects {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: [col] 100fr [col] 100fr [col] 100fr [col] 100fr [col] 100fr ;
+    grid-template-columns: [col] 100fr [col] 100fr [col] 100fr [col] 100fr [col] 100fr [col] 100fr ;
     grid-template-rows: [row] auto [row] auto [row] ;
     background-color: #fff;
     color: #444;
@@ -125,6 +125,12 @@ grid-column: col 2 / span 2;
 
 grid-column: col 2 / span 2;
     grid-row: row 15;
+  }
+
+  .thirteen{
+    grid-column: col 2 / span 2;
+    grid-row: row 16;
+
   }
   a{
     text-decoration: none;
