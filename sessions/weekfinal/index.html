@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+	<title>QART</title>
+</head>
+
+<style type="text/css">
+  
+	body {
+		overflow: hidden;
+		font-family: 'Avenir book';
+    
+
+
+	}
+a{
+	text-decoration: none;
+}
+  
+  .animation{
+  	width: 8em;
+		height: 12em;
+    z-index: 40;
+    transition: all 0.3s ease-in-out 0s;
+    position: absolute;
+		top: 291px;
+		left: 120px;
+  }
+
+	.onboarding {
+		display: ;
+		justify-content: center;
+		align-items: center;
+		width: 100vh;
+	}
+
+	.circle {
+     transition: all 0.3s ease-in-out 0s;
+		border-radius: 50%;
+		background-color: #FF7474;
+		width: 8em;
+		height: 8em;
+		position: absolute;
+		top: 291px;
+		left: 120px;
+		z-index: 20;
+	}
+
+	.square {
+     transition: all 0.3s ease-in-out 0s;
+		width: 8em;
+		height: 8em;
+		background-color: #AEC8F2;
+		position: absolute;
+		top: 350px;
+		left: 120px;
+		z-index: 10;
+	}
+	#circle1 {
+	
+		text-align: center;
+		opacity: 0;
+     transition: all 0.3s ease-in-out 0.4s;
+		border-radius: 50%;
+		color: white;
+		width: 8em;
+		height: 8em;
+		position: absolute;
+		top: 70px;
+		left: 120px;
+		z-index: 30;
+    padding-top: 25px;
+	}
+
+	
+
+	#square1 {
+		text-align: center;
+		opacity: 0;
+     transition: all 0.3s ease-in-out 0.4s;
+		width: 8em;
+		height: 8em;
+		color: white;
+		position: absolute;
+		top: 550px;
+		left: 120px;
+		z-index: 30;
+    padding-top: 25px;
+
+	}
+
+	.title {
+		font-family: 'Avenir book';
+		position: absolute;
+		top: 325px;
+		left: 135px;
+		z-index: 0;
+	}
+
+
+</style>
+
+<body>
+	
+    
+		<!--<a href="homepage.html">-->
+		<div class="animation" id="animation" onclick="cardDown()"></div>
+		<a href="profile.html">
+      <div id="circle1">
+      	<h2>profile</h2>
+      </div>
+  </a>
+  <a href="gallery.html">
+      <div id="square1">
+      	<h2>gallery</h2>
+      </div>
+  </a>
+			<div class="circle" id="circle"></div>
+			<div class="title">
+				<h1>QART</h1>
+			</div>
+			<div class="square" id="square"></div>
+
+	
+		<!--</a>-->
+	
+</body>
+
+<script type="text/javascript">
+  
+ function cardDown() {
+ 	document.getElementById('animation').style.top= "-300px";
+
+    document.getElementById('circle').style.top= "70px";
+    document.getElementById('square').style.top= "550px";
+     document.getElementById('circle1').style.opacity= 1;
+    document.getElementById('square1').style.opacity= 1;
+}
+
+
+
+
+	
+</script>
+
+</html>
